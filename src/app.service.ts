@@ -1,13 +1,8 @@
-import { Controller, Get, Res } from '@nestjs/common';
-import { ApiExcludeEndpoint } from '@nestjs/swagger';
+import { Injectable } from "@nestjs/common";
 
-@Controller()
-export class AppController {
-  constructor() {}
-
-  @ApiExcludeEndpoint()
-  @Get()
-  async redirect(@Res() resposta: any) {
-    return resposta.redirect('/swagger');
+@Injectable()
+export class AppService {
+  getHello(): string {
+    return "Hello World!";
   }
 }

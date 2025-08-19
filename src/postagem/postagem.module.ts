@@ -4,7 +4,7 @@ import { PostagemController } from "./controllers/postagem.controller";
 import { PostagemService } from "./services/postagem.service";
 import { TemaModule } from "../tema/tema.module";
 import { Postagem } from "./entities/postagem.entity";
-//import { Postagem } from "src/postagem/entities/postagem.entity";
+
 
 @Module({
     imports:[TypeOrmModule.forFeature([Postagem]), TemaModule],

@@ -3,7 +3,6 @@ import { Bcrypt } from "./bcrypt/bcrypt";
 import { AuthController } from "./controllers/auth.controller";
 import { AuthService } from "./services/auth.service";
 import { LocalStrategy } from "./strategy/local.strategy";
-//import { UsuarioModule } from "src/usuario/usuario.module";
 import { PassportModule } from "@nestjs/passport";
 import { JwtModule } from "@nestjs/jwt";
 import { jwtConstants } from "./constants/constants";

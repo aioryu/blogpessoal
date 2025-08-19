@@ -4,7 +4,7 @@ import { Usuario } from './entities/usuario.entity';
 import { UsuarioService } from './services/usuario.service';
 import { UsuarioController } from './controllers/usuario.controller';
 import { AuthModule } from '../auth/auth.module';
-//import { AuthModule } from 'src/auth/auth.module';
+
 
 @Module({
   imports: [TypeOrmModule.forFeature([Usuario]), forwardRef(() => AuthModule)], 
